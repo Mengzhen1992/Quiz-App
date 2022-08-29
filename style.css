@@ -72,6 +72,9 @@ body {
 }
 
 /* css style main */
+.card-wrap {
+  margin-bottom: 80px;
+}
 
 .question-card {
   position: relative;
@@ -125,7 +128,10 @@ body {
 /* css style footer */
 
 .navbar {
-  position: sticky;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   background-color: rgb(217, 207, 207);
@@ -139,8 +145,9 @@ body {
 .navbar li a {
   display: flex;
   align-items: flex-end;
+  color: rgb(77, 73, 73);
 }
 
-.navbar li a i {
-  color: #000;
+.navbar li a:hover {
+  color: rgb(6, 39, 88);
 }
