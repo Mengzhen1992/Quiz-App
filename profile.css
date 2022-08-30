@@ -1,0 +1,195 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* autour-one-regular - latin */
+@font-face {
+  font-family: "Autour One";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/autour-one-v24-latin/autour-one-v24-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("fonts/autour-one-v24-latin/autour-one-v24-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("fonts/autour-one-v24-latin/autour-one-v24-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("fonts/autour-one-v24-latin/autour-one-v24-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("fonts/autour-one-v24-latin/autour-one-v24-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("fonts/autour-one-v24-latin/autour-one-v24-latin-regular.svg#AutourOne")
+      format("svg"); /* Legacy iOS */
+}
+
+/* b612-regular - latin */
+@font-face {
+  font-family: "B612";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/b612-v12-latin/b612-v12-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("fonts/b612-v12-latin/b612-v12-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("fonts/b612-v12-latin/b612-v12-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("fonts/b612-v12-latin/b612-v12-latin-regular.woff") format("woff"),
+    /* Modern Browsers */ url("fonts/b612-v12-latin/b612-v12-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("fonts/b612-v12-latin/b612-v12-latin-regular.svg#B612") format("svg"); /* Legacy iOS */
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: rgb(240, 237, 237);
+}
+
+/* css style header */
+
+.title {
+  font-family: "Autour One";
+  font-size: 40px;
+  text-align: center;
+  background-color: rgb(217, 207, 207);
+  height: 100px;
+  line-height: 100px;
+}
+
+/* css style footer */
+
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(217, 207, 207);
+}
+
+.navbar li {
+  font-size: 3em;
+  padding: 8px;
+}
+
+.navbar li a {
+  display: flex;
+  align-items: flex-end;
+  color: rgb(77, 73, 73);
+}
+
+.navbar li a:hover {
+  color: rgb(6, 39, 88);
+}
+
+/* css style profile page */
+
+.foto {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.foto img {
+  border-radius: 50%;
+  width: 35%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.foto h2 {
+  font-family: "B612";
+  font-size: 25px;
+}
+
+.about-me h3 {
+  font-family: "B612";
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+.about-me p {
+  font-family: "B612";
+  font-size: 15px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+.counter {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+
+.counter__question {
+  font-size: 1.2em;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 2px 12px;
+}
+
+.counter__question i {
+  padding-right: 3px;
+}
+
+.counter__bookmark {
+  font-size: 1.2em;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 2px 12px;
+}
+
+.counter__bookmark i {
+  padding-right: 3px;
+}
+
+.setting {
+  padding-bottom: 80px;
+}
+
+.setting h3 {
+  font-family: "B612";
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+
+.setting p {
+  font-family: "B612";
+  font-size: 15px;
+  padding-left: 20px;
+}
+
+.setting .dark-mode {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  padding-right: 50px;
+  align-items: center;
+}
+
+.setting .dark-mode button {
+  font-size: 1.8em;
+  border: none;
+}
