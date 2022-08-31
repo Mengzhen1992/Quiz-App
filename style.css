@@ -1,9 +1,25 @@
+@import url(components/card.css);
+@import url(components/header.css);
+@import url(components/navbar.css);
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: rgb(240, 237, 237);
 }
 
 /* autour-one-regular - latin */
@@ -46,108 +62,4 @@
       format("truetype"),
     /* Safari, Android, iOS */
       url("fonts/b612-v12-latin/b612-v12-latin-regular.svg#B612") format("svg"); /* Legacy iOS */
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-body {
-  background-color: rgb(240, 237, 237);
-}
-
-/* css style header */
-
-.title {
-  font-family: "Autour One";
-  font-size: 40px;
-  text-align: center;
-  background-color: rgb(217, 207, 207);
-  height: 100px;
-  line-height: 100px;
-}
-
-/* css style main */
-.card-wrap {
-  margin-bottom: 80px;
-}
-
-.question-card {
-  position: relative;
-  margin: 20px;
-  padding: 20px;
-  font-family: "B612";
-  font-size: 15px;
-  background-color: rgb(240, 237, 237);
-  border: 2px solid gray;
-  border-radius: 5px;
-}
-
-.bookmark-btn {
-  font-size: 2em;
-  position: absolute;
-  top: -15px;
-  right: 10px;
-  border: none;
-}
-
-.answer-btn {
-  background-color: grey;
-  font-family: "B612";
-  color: white;
-  font-size: 16px;
-  text-align: center;
-  border-radius: 5px;
-  border: none;
-  display: block;
-  margin: 30px auto;
-  padding: 10px 15px;
-}
-
-.categories-tags {
-  display: flex;
-}
-
-.tag {
-  background-color: rgb(217, 207, 207);
-  justify-content: flex-start;
-  font-size: 14px;
-  margin: 3px;
-  padding: 3px;
-  border: 1px solid gray;
-}
-
-.tag a {
-  color: rgb(2, 2, 40);
-}
-
-/* css style footer */
-
-.navbar {
-  overflow: hidden;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  background-color: rgb(217, 207, 207);
-}
-
-.navbar li {
-  font-size: 3em;
-  padding: 8px;
-}
-
-.navbar li a {
-  display: flex;
-  align-items: flex-end;
-  color: rgb(77, 73, 73);
-}
-
-.navbar li a:hover {
-  color: rgb(6, 39, 88);
 }

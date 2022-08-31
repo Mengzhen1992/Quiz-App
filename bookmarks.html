@@ -12,70 +12,63 @@
     ></script>
   </head>
   <body>
-    <header>
-      <h1 class="title">Quiz App</h1>
+    <header class="header">
+      <h1>Quiz App</h1>
     </header>
     <main>
-      <section class="card-wrap">
-        <div class="question-card">
-          <button class="bookmark-btn" aria-label="bookmark">
+      <section class="card">
+          <button class="card__bookmark-icon" aria-label="bookmark icon">
             <i class="fa-solid fa-bookmark"></i>
           </button>
           <p>What is the default value of the position property?</p>
-          <button class="answer-btn">Show Answer</button>
-          <ul class="categories-tags">
-            <li class="tag"><a href="#">#html</a></li>
-            <li class="tag"><a href="#">#css</a></li>
-            <li class="tag"><a href="#">#javascript</a></li>
+          <button class="card__answer-button">Show Answer</button>
+          <ul class="card__tag-list">
+            <li class="card__tag">#html</li>
+            <li class="card__tag">#css</li>
+            <li class="card__tag">#javascript</li>
           </ul>
-        </div>
-        <div class="question-card">
-          <button class="bookmark-btn" aria-label="bookmark">
+        </section>
+        <section class="card">
+          <button class="card__bookmark-icon" aria-label="bookmark icon">
             <i class="fa-solid fa-bookmark"></i>
           </button>
           <p>What is Flexbox used for?</p>
-          <button class="answer-btn">Show Answer</button>
-          <ul class="categories-tags">
-            <li class="tag"><a href="#">#html</a></li>
-            <li class="tag"><a href="#">#css</a></li>
-            <li class="tag"><a href="#">#javascript</a></li>
+          <button class="card__answer-button">Show Answer</button>
+          <ul class="card__tag-list">
+            <li class="card__tag">#html</li>
+            <li class="card__tag">#css</li>
+            <li class="card__tag">#javascript</li>
           </ul>
-        </div>
-        <div class="question-card">
-          <button class="bookmark-btn" aria-label="bookmark">
+        </section>
+        <section class="card">
+          <button class="card__bookmark-icon" aria-label="bookmark icon">
             <i class="fa-solid fa-bookmark"></i>
           </button>
           <p>
             By default flex items will try to fit onto one line. Which style
             declaration allows the items to wrap onto the next line?
           </p>
-          <button class="answer-btn">Show Answer</button>
-          <ul class="categories-tags">
-            <li class="tag"><a href="#">#html</a></li>
-            <li class="tag"><a href="#">#css</a></li>
-            <li class="tag"><a href="#">#javascript</a></li>
+          <button class="card__answer-button">Show Answer</button>
+          <ul class="card__tag-list">
+            <li class="card__tag">#html</li>
+            <li class="card__tag">#css</li>
+            <li class="card__tag">#javascript</li>
           </ul>
-        </div>
+        </section>
       </section>
     </main>
     <footer>
-      <ul class="navbar">
-        <li>
-          <a href="homepage.html" aria-label="home-page"
-            ><i class="fa-solid fa-house"></i
-          ></a>
-        </li>
-        <li>
-          <a href="bookmarks.html" aria-label="bookmarks-page"
-            ><i class="fa-solid fa-bookmark"></i
-          ></a>
-        </li>
-        <li>
-          <a href="profile.html" aria-label="profile-page"
-            ><i class="fa-solid fa-user"></i
-          ></a>
-        </li>
-      </ul>
+      <nav class="navbar">
+        <a href="homepage.html" aria-label="home page"
+          ><i class="fa-solid fa-house"></i
+        ></a>
+        <a href="bookmarks.html" aria-label="bookmarks-page"
+          ><i class="fa-solid fa-bookmark"></i
+        ></a>
+        <a href="profile.html" aria-label="profile-page"
+          ><i class="fa-solid fa-user"></i
+        ></a>
+      </nav>
     </footer>
   </body>
 </html>
