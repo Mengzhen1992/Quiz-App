@@ -1,11 +1,11 @@
 .navbar {
+  display: flex;
+  justify-content: space-around;
   overflow: hidden;
   position: fixed;
   bottom: 0;
   width: 100%;
-  display: flex;
-  justify-content: space-around;
-  background-color: rgb(217, 207, 207);
+  background-color: var(--secondary-color);
 }
 
 .navbar a {
@@ -13,9 +13,9 @@
   align-items: flex-end;
   font-size: 3em;
   padding: 8px;
-  color: rgb(77, 73, 73);
+  color: var(--navbar__icon-color);
 }
 
 .navbar a:hover {
-  color: rgb(6, 39, 88);
+  color: var(--navbar__icon-color--hover);
 }

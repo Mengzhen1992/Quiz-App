@@ -1,8 +1,8 @@
 .header {
-  font-family: "Autour One";
-  font-size: 35px;
+  font-family: var(--primary-font);
+  font-size: 1.8rem;
   text-align: center;
-  background-color: rgb(217, 207, 207);
-  height: 100px;
-  line-height: 100px;
+  background-color: var(--secondary-color);
+  height: 3.5em;
+  line-height: 3.5em;
 }

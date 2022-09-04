@@ -5,66 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>profile-page</title>
-    <link rel="stylesheet" href="profile.css" />
+    <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/6a0d5c4676.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <header>
-      <h1 class="title">Quiz App</h1>
+    <header class="header">
+      <h1>Quiz App</h1>
     </header>
     <main>
-      <section class="foto">
-        <img src="images/Profile_Mengzhen.jpg" alt="my photo" />
-        <h2>Mengzhen Liao</h2>
-      </section>
-      <section class="about-me">
-        <h3>About me</h3>
-        <p>
-          I am Mengzhen from China, currently living in Munich and interested
-          now in a coding career.
-        </p>
-      </section>
-      <section class="counter">
-        <button class="counter__question">
-          <i class="fa-solid fa-circle-question"></i>
-          12
-        </button>
-        <button class="counter__bookmark">
-          <i class="fa-solid fa-bookmark"></i>
-          12
-        </button>
+      <section class="profile">
+        <section class="profile__title">
+          <img src="images/Profile_Mengzhen.jpg" alt="my photo" />
+          <h2>Mengzhen Liao</h2>
+        </section>
+        <section class="profile__text">
+          <h3>About me</h3>
+          <p>
+            I am Mengzhen from China, currently living in Munich and interested
+            now in a coding career.
+          </p>
+        </section>
+        <section class="profile__counter">
+          <article class="profile__counter-question">
+            <i class="fa-solid fa-circle-question"></i>
+            12
+          </article>
+          <article class="profile__counter-bookmark">
+            <i class="fa-solid fa-bookmark"></i>
+            12
+          </article>
+        </section>
       </section>
       <section class="setting">
         <h3>Settings</h3>
-        <div class="dark-mode">
+        <section class="setting__mode">
           <p>Dark Mode</p>
-          <button aria-label="button-dark">
+          <button class="setting__mode-icon" aria-label="button dark">
             <i class="fa-solid fa-toggle-off"></i>
           </button>
-        </div>
+        </section>
       </section>
     </main>
     <footer>
-      <ul class="navbar">
-        <li>
-          <a href="homepage.html" aria-label="home-page"
-            ><i class="fa-solid fa-house"></i
-          ></a>
-        </li>
-        <li>
-          <a href="bookmarks.html" aria-label="bookmarks-page"
-            ><i class="fa-solid fa-bookmark"></i
-          ></a>
-        </li>
-        <li>
-          <a href="profile.html" aria-label="profile-page"
-            ><i class="fa-solid fa-user"></i
-          ></a>
-        </li>
-      </ul>
+      <nav class="navbar">
+        <a href="homepage.html" aria-label="home page"
+          ><i class="fa-solid fa-house"></i
+        ></a>
+        <a href="bookmarks.html" aria-label="bookmarks-page"
+          ><i class="fa-solid fa-bookmark"></i
+        ></a>
+        <a href="profile.html" aria-label="profile-page"
+          ><i class="fa-solid fa-user"></i
+        ></a>
+      </nav>
     </footer>
   </body>
 </html>

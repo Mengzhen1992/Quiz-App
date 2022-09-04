@@ -1,0 +1,72 @@
+.profile__title {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.profile__title img {
+  border-radius: 50%;
+  width: 35%;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.profile__title h2 {
+  font-family: var(--secondary-font);
+  font-size: 1.6rem;
+}
+
+.profile__text h3,
+.setting h3 {
+  font-family: var(--secondary-font);
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding-left: 1em;
+  padding-bottom: 0.5em;
+}
+
+.profile__text p,
+.setting__mode p {
+  font-family: var(--secondary-font);
+  font-size: 1rem;
+  padding-left: 1.25em;
+  padding-bottom: 0.5em;
+}
+
+.profile__counter {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 0.5em;
+  padding-bottom: 1.5em;
+}
+
+.profile__counter-question,
+.profile__counter-bookmark {
+  font-size: 1.2rem;
+  border: 2px solid black;
+  border-radius: var(--border-radius);
+  padding: 0.1em 0.625em;
+}
+
+.profile__counter-question i,
+.profile__counter-bookmark i {
+  padding-right: 0.2em;
+}
+
+.setting {
+  padding-bottom: 5em;
+}
+
+.setting__mode {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  padding-right: 3em;
+  align-items: center;
+}
+
+.setting__mode-icon {
+  font-size: 1.8em;
+  border: none;
+}
