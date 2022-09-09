@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/global.css" />
     <script
       src="https://kit.fontawesome.com/6a0d5c4676.js"
       crossorigin="anonymous"
     ></script>
+    <script src="js/index.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -17,11 +18,17 @@
     </header>
     <main>
       <section class="card">
-        <button class="card__bookmark-icon" aria-label="bookmark icon">
+        <button
+          class="card__bookmark-icon"
+          aria-label="bookmark icon"
+          data-js="bookmark-button"
+        >
           <i class="fa-solid fa-bookmark"></i>
         </button>
         <p>What is the default value of the position property?</p>
-        <button class="card__answer-button">Show Answer</button>
+        <button class="card__answer-button" data-js="answer-button">
+          Show Answer
+        </button>
         <ul class="card__tag-list">
           <li class="card__tag">#html</li>
           <li class="card__tag">#css</li>
@@ -33,7 +40,11 @@
           <i class="fa-regular fa-bookmark"></i>
         </button>
         <p>Why is positioning important?</p>
-        <button class="card__answer-button">Show Answer</button>
+        <button class="card__answer-button hidden">Hide Answer</button>
+        <p class="card__answer-text">
+          Because the normal document flow is not enough to create some
+          userexperience designs.
+        </p>
         <ul class="card__tag-list">
           <li class="card__tag">#html</li>
           <li class="card__tag">#css</li>
@@ -87,6 +98,9 @@
         ></a>
         <a href="bookmarks.html" aria-label="bookmarks-page"
           ><i class="fa-solid fa-bookmark"></i
+        ></a>
+        <a href="form.html" aria-label="form-page"
+          ><i class="fa-solid fa-square-plus"></i
         ></a>
         <a href="profile.html" aria-label="profile-page"
           ><i class="fa-solid fa-user"></i

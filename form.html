@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form-page</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <script
+      src="https://kit.fontawesome.com/6a0d5c4676.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/form.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Quiz App</h1>
+    </header>
+    <main>
+      <form data-js="form">
+        <label for="question" name="createQuestion" class="form__label"
+          >Your Question:
+        </label>
+        <textarea
+          name="question"
+          id="question"
+          cols="30"
+          rows="10"
+          maxlength="150"
+          data-js="question"
+        ></textarea>
+        <small class="form__character-count">
+          <span data-js="questionAmountLeft"></span> characters left
+        </small>
+        <label for="answer" name="createAnswer" class="form__label"
+          >Your Answer:
+        </label>
+        <textarea
+          name="answer"
+          id="answer"
+          cols="30"
+          rows="10"
+          maxlength="150"
+          data-js="answer"
+        ></textarea>
+        <small class="form__character-count">
+          <span data-js="answerAmountLeft"></span> characters left
+        </small>
+        <label for="tag" name="createTag" class="form__label">Tag: </label>
+        <input
+          type="text"
+          id="tag"
+          class="form__input"
+          name="tag"
+          aria-labelledby="create a tag for your new card"
+        />
+        <button type="submit" class="form__btn" data-js="form-btn">
+          Submit
+        </button>
+      </form>
+    </main>
+    <footer>
+      <nav class="navbar">
+        <a href="homepage.html" aria-label="home page"
+          ><i class="fa-solid fa-house"></i
+        ></a>
+        <a href="bookmarks.html" aria-label="bookmarks-page"
+          ><i class="fa-solid fa-bookmark"></i
+        ></a>
+        <a href="form.html" aria-label="form-page"
+          ><i class="fa-solid fa-square-plus"></i
+        ></a>
+        <a href="profile.html" aria-label="profile-page"
+          ><i class="fa-solid fa-user"></i
+        ></a>
+      </nav>
+    </footer>
+  </body>
+</html>
